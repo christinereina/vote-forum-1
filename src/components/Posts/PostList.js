@@ -4,7 +4,7 @@ import Post from './Post';
 
 function PostList(props) {
   return (
-    <React.Fragment>
+  <React.Fragment>
     <hr/>
     {Object.values(props.postList).map((post) =>
     <Post
