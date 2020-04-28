@@ -6,10 +6,12 @@ import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
 import reducer from './reducers/post-list-reducer';
 
+const store = createStore(reducer);
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
